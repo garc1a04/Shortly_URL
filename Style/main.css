@@ -317,3 +317,25 @@ body {
 .hidden {
     display: none;
 }
+
+.animation_fade_button {
+    transition: all 0.5s ease-in;
+}
+
+.animation_fade_in {
+    animation: fadeIn 0.7s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.button_copied {
+    background-color: black;
+    color: whitesmoke;
+}
+
+.button_copied:hover {
+    background-color: rgb(71, 71, 71);
+}

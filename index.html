@@ -7,8 +7,8 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="Style/reset.css">
-    <link rel="stylesheet" href="Style/main.css">
-    <link rel="stylesheet" href="Style/mediaQueries.css">
+    <link rel="stylesheet" href="Style/main.css?v=1">
+    <link rel="stylesheet" href="Style/mediaQueries.css?v=1">
   </head>
   <body>
 
@@ -139,53 +139,6 @@
 
 
     </footer>
-    
-    <script>
-      function ajustarLayout() {
-        if(window.innerWidth >= 1110){
-          let cards = document.querySelectorAll(".main__card");
-          for(let i = 0 ; i < cards.length; i++){
-            cards[i].style.marginTop = `${i*2.8}rem`;
-          }
-        }
-
-        if(window.innerWidth >= 1080){
-            let element_header_infomations = document.querySelector(".header__informations__container");
-            let header = `
-              <div class="header_functions">
-                  <img class="header__img" src="images/logo.svg">
-                  
-                  <ul class="navbar__informations">
-                      <li class="items1">Features</li>
-                      <li class="items2">Pricing</li>
-                      <li class="items3">Resources</li>
-                  </ul>  
-              </div>
-
-              <div id="navbar" class="header_button">
-                  <ul class="navbar__user">
-                    <li class="lgn">Login</li>
-                    <li><button class="btn button_sign">Sign Up</button></li>
-                  </ul>
-              </div>
-            `;
-            element_header_infomations.innerHTML = header;
-          } else {
-            let element_header_infomations = document.querySelector(".header__informations__container");
-            let header = `
-              <img class="header__img" src="images/logo.svg">
-
-              <div class="header_button">
-                <p>☰</p>
-              </div>
-            `;
-            element_header_infomations.innerHTML = header;
-          }
-        }
-
-        window.addEventListener("load", ajustarLayout);
-        window.addEventListener("resize", ajustarLayout);
-    </script>
-    <script src="Script/main.js" async defer></script>
+    <script src="Script/main.js?v=1" async defer></script>
   </body>
 </html>

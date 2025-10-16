@@ -37,7 +37,7 @@ Por não depender de um servidor de backend, a execução é extremamente simple
 
 1.  **Clone o repositório:**
     ```bash
-    git clone https://github.com/garc1a04/url.git
+    git clone https://github.com/garc1a04/Shortly_URL.git
     cd url
     ```
 

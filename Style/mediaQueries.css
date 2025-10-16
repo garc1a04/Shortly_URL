@@ -10,6 +10,18 @@
     .main_informations__div {
         width: 50rem;
     }
+
+    .footer__boost {
+        background-image: url("../images/bg-boost-desktop.svg");
+        background-position-y: 0rem;
+        background-position-x: 100%;
+        padding: 6rem;
+    }
+
+    .footer__boost__title {
+        font-size: 3rem;
+    }
+
 }
 
 @media (min-width: 1080px) and (max-width: 1215px){
@@ -18,7 +30,6 @@
         font-size: 65%;
     }
     
-
     .header {
         overflow-y: hidden;
         padding-bottom: 15rem;
@@ -169,7 +180,7 @@
 
     .footer__boost {
         background-image: url("../images/bg-boost-desktop.svg");
-        background-position-y: 0rem;
+        background-position-y: 100%;
         background-position-x: 100%;
         padding: 6rem;
     }
@@ -179,13 +190,12 @@
     }
 
     .line {
-        justify-self: baseline;
         position: absolute;
-        border-top: none;
-        width: 87rem;
+        border-top: 0.7rem solid hsl(180, 66%, 49%);
+        width: 70rem;
         height: 0rem;
         text-align: center;
-        left: 20%;
+        left: 15%;
     }
 
     .error {
@@ -370,6 +380,7 @@
     }
 
     .main__cards {
+        position: relative;
         justify-content: center;
         flex-direction: row;
         gap: 1%;
@@ -377,8 +388,7 @@
 
     .footer__boost {
         background-image: url("../images/bg-boost-desktop.svg");
-        background-size: 100%;
-        background-position-y: 0rem;
+        background-position-y: 100%;
         background-position-x: 100%;
         padding: 6rem;
     }
@@ -393,7 +403,7 @@
         width: 70rem;
         height: 0rem;
         text-align: center;
-        left: 33vw;
+        left: 26%;
     }
 
     .error {

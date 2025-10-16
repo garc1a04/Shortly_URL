@@ -267,7 +267,8 @@ body {
     background-color: hsl(257, 27%, 26%);
     background-image: url("../images/bg-boost-mobile.svg");
     background-repeat: no-repeat;
-    background-position-y: -5rem;
+    background-position-y: 100%;
+    background-position-x: 100%;
 }
 
 .footer__boost__title {

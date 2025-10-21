@@ -26,8 +26,8 @@ function ajustarLayout() {
 
         <div id="navbar" class="header_button">
             <ul class="navbar__user">
-            <li class="lgn">Login</li>
-            <li><button class="btn button_sign">Sign Up</button></li>
+                <li class="lgn">Login</li>
+                <li><button class="btn_sign btn btn--primary">Sign Up</button></li>
             </ul>
         </div>
     `;
@@ -36,11 +36,11 @@ function ajustarLayout() {
     else {
         let element_header_infomations = document.querySelector(".header__informations__container");
         let header = `
-            <img class="header__img" src="images/logo.svg">
+                <img class="header__logo" src="images/logo.svg" alt="Shortly Logo">
 
-            <div class="header_button">
-            <p>☰</p>
-            </div>
+                <button class="header__menu-button" aria-controls="main-nav" aria-expanded="false">
+                    <p>☰</p>
+                </button>
         `;
         element_header_infomations.innerHTML = header;
     }

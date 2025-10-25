@@ -20,20 +20,25 @@
         max-width: 40rem;
     }
 
-
     .main__cards {
         flex-direction: row;
-        gap: 3rem;
-        padding: 0 5rem;
+        justify-content: center;
+    }
+
+    .main__container {
+        flex-direction: row;
+        justify-content: center;
+        gap: 2rem;
+        width: calc(34% * 3);
     }
 
     .main__cards__line {
         border-top: 0.7rem solid var(--color-primary-cyan);
-        width: 70%;
+        width: calc(26% * 3);
         height: 0;
         border-left: none;
-        top: 25%; 
-        left: 15%;
+        top: 35%; 
+        left: 10%;
     }
 
     .main__card {
@@ -42,8 +47,8 @@
     }
 
     .main__cards > div:nth-child(2) { margin-top: 0rem; }
-    .main__cards > div:nth-child(4) { margin-top: 4rem; }
-    .main__cards > div:nth-child(6) { margin-top: 8rem; }
+    .main__cards > div:nth-child(4) { margin-top: 14rem; }
+    .main__cards > div:nth-child(6) { margin-top: 18rem; }
     
     .card__icon-container {
         left: 3rem;
@@ -66,6 +71,7 @@
     .header {
         padding: 10rem;
         padding-top: 4.5rem;
+        padding-left: 16rem;
         font-size: 2rem;
     }
 
@@ -104,9 +110,10 @@
         flex-direction: row;
         background-image: url("../images/bg-shorten-desktop.svg");
         background-size: cover;
-        height: 7rem;
-
-        top: -0.5rerem;
+        background-position: 100% -5px;
+        height: 5rem;
+        padding: 5rem;
+        top: -2.5rem;
     }
     
     .shorten-box__input-area {
@@ -114,8 +121,8 @@
     }
 
     .shorten-box__error-message {   
-        bottom: -2rem;
-        left: 0;
+        bottom: 1.5rem;
+        left: 5.5rem;
     }
 
     .shorten-box__input {
@@ -171,30 +178,40 @@
         flex-shrink: 0;
     }
 
-    .main__cards {
+    .main__container {
         flex-direction: row;
-        align-items: flex-start;
-        gap: 3rem;
-        padding: 0 10rem;
+        justify-content: center;
+        gap: 2rem;
+        width: calc(34% * 3);
     }
 
     .main__cards__line {
         border-top: 0.7rem solid var(--color-primary-cyan);
-        width: 60%;
+        width: calc(26% * 3);
         height: 0;
         border-left: none;
-        top: 25%;
-        left: 20%;
+        top: 35%; 
+        left: 10%;
+    }
+
+    .main__cards__line {
+        border-top: 0.7rem solid var(--color-primary-cyan);
+        width: 50%;
+        height: 0;
+        border-left: none;
+        top: 40%;
+        left: 25%;
     }
 
     .main__card {
         text-align: left;
+        height: 15rem;
         margin-top: 0rem;
     }
 
     .main__cards > div:nth-child(2) { margin-top: 0rem; }
-    .main__cards > div:nth-child(4) { margin-top: 4rem; }
-    .main__cards > div:nth-child(6) { margin-top: 8rem; }
+    .main__cards > div:nth-child(4) { margin-top: 14rem; }
+    .main__cards > div:nth-child(6) { margin-top: 18rem; }
 
     .card__icon-container {
         left: 15%;

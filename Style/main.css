@@ -45,6 +45,7 @@ body {
     transition: background-color 0.3s ease-in-out;
 }
 
+
 .btn--primary {
     background-color: var(--color-primary-cyan);
     font-size: 1.8rem;
@@ -67,6 +68,10 @@ body {
 
 .btn--action {
     background-color: var(--color-primary-cyan);
+}
+
+.btn--action:hover {
+    background-color: hsla(180, 66%, 49%, 0.65);
 }
 
 .button-copied {
@@ -223,6 +228,8 @@ body {
 .shorten-box__input {
     font-family: var(--font-family-primary);
     font-style: normal;
+    border-radius: 10px;
+    border: none;
     width: 100%;
     height: 5rem;
 }
@@ -324,6 +331,12 @@ body {
 }
 
 .main__cards {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.main__container {
     position: relative;
     display: flex;
     flex-direction: column;

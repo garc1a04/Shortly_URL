@@ -96,7 +96,7 @@ function addCards(indexAtual){
 
             navigator.clipboard.writeText(textToCopy)
             .then(() => {
-                button.classList.add("button_copied");
+                button.classList.add("button-copied");
                 button.value = "Copied"
             })
             .catch(err => {
